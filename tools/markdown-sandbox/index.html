@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Learning Playground</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="pane" id="editor-pane">
+            <div class="pane-title">Raw Markdown Code</div>
+            <div class="button-group">
+                <button id="inject-sample-button">Inject Sample MD</button> 
+                <button id="clear-button">Clear All</button>
+                <button id="copy-button">Copy to Clipboard</button>
+                <button id="save-button">Save File</button>
+            </div>
+            <div id="markdown-editor" contenteditable="true" spellcheck="false" data-placeholder="Type your Markdown here..."></div>
+        </div>
+        
+        <div id="dragbar"></div>
+        
+        <div class="pane" id="preview-pane">
+            <div class="pane-title">Rendered Output</div>
+            <div id="markdown-preview"></div>
+        </div>
+
+    </div>
+    <div class="footer-bar">
+      &copy; 2025 XP4Cyber. All rights reserved. | Developed by <a href="https://ejmedia.ca" target=_new>ejmedia.ca</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
